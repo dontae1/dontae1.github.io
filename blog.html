@@ -46,26 +46,6 @@ ul {
 #date {
     color: #5FDBC0;
 }
-#top-link-block.affix-top {
-    position: absolute;
-    /* allows it to "slide" up into view */
-    
-    bottom: -82px;
-    /* negative of the offset - height of link element */
-    
-    left: 10px;
-    /* padding from the left side of the window */
-}
-#top-link-block.affix {
-    position: fixed;
-    /* keeps it on the bottom once in view */
-    
-    bottom: 18px;
-    /* height of link element */
-    
-    left: 10px;
-    /* padding from the left side of the window */
-}
 </style>
 
 <body>
@@ -395,11 +375,7 @@ ul {
         <hr>
         -->
 
-        <span id="top-link-block" class="hidden">
-            <a href="#top" class="well well-sm"  onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
-                <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
-            </a>
-        </span>
+       
         <br>
         <br>
         <footer>
@@ -465,18 +441,6 @@ ul {
             </div>
             <!-- /.row -->
         </footer>
-
-
-        <script type="text/javascript">
-        if (($(window).height() + 100) < $(document).height()) {
-            $('#top-link-block').removeClass('hidden').affix({
-                // how far to scroll down before link "slides" into view
-                offset: {
-                    top: 100
-                }
-            });
-        }
-        </script>
 
         <script>
         (function(i, s, o, g, r, a, m) {
