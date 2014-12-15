@@ -394,6 +394,12 @@ ul {
 
         <hr>
         -->
+
+        <span id="top-link-block" class="hidden">
+            <a href="#top" class="well well-sm"  onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+                <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+            </a>
+        </span>
         <br>
         <br>
         <footer>
@@ -460,11 +466,7 @@ ul {
             <!-- /.row -->
         </footer>
 
-        <span id="top-link-block" class="hidden">
-    <a href="#top" class="well well-sm"  onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
-        <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
-    </a>
-</span>
+
         <script type="text/javascript">
         if (($(window).height() + 100) < $(document).height()) {
             $('#top-link-block').removeClass('hidden').affix({
