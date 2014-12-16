@@ -13,6 +13,11 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/1-col-portfolio.css">
 </head>
+<style type="text/css">
+.col-md-4 {
+    margin-top: 3%;
+}
+</style>
 
 <body>
     <div class='nav'>
@@ -65,9 +70,11 @@
             </div>
             <div class='col-md-4'>
                 <div class="fb-like-box" data-href="https://www.facebook.com/dontaefashion" data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="true" data-show-border="true"></div>
+                <br>
                 <div class="fb-share-button" data-href="https://www.facebook.com/dontaefashion" data-layout="button"></div>
             </div>
             <div class='col-md-4'>
+                <a class="twitter-timeline" href="https://twitter.com/DontaeFashion" data-widget-id="544679272309211136">Tweets by @DontaeFashion</a>
             </div>
         </div>
     </div>
@@ -75,6 +82,20 @@
     <div id="fb-root"></div>
 
     <div id="fb-root"></div>
+
+    <script>
+    ! function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + "://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "twitter-wjs");
+    </script>
+
     <script>
     (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
