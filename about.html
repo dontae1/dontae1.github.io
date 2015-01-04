@@ -28,13 +28,7 @@
 .navbar {
     background-color: transparent;
 }
-body {
-    background-color: white;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-image: url(img/2dotsIntro.png);
-}
-#name {
+body {} #name {
     margin: 2%;
     max-width: 90%;
 }
@@ -55,7 +49,8 @@ h1 {
 h2 {
     margin-top: 0%;
 }
-h3 {
+h3,
+h4 {
     font-family: myFirstFont;
 }
 #info {
@@ -88,6 +83,15 @@ a {
 }
 #stuff2 {
     margin-top: 6%;
+}
+.space {
+    margin-bottom: 10px;
+}
+.jumbotron {
+    padding-bottom: 0px;
+    margin-bottom: 0%;
+    background-color: white;
+    color: black;
 }
 </style>
 
@@ -138,81 +142,50 @@ a {
     <div class='stuff'>
         <div class='container'>
             <div class='row'>
-                <div id='info' class="col-md-6">
-                    <center>
-                        <div id='by'>
-                            <h1><span id= 'blue'>#</span>ABOUT</h1>
-                            <hr>
-                            <h3 id='stuff2'>
-                                I am an Engineering student that likes 
-                                <span id= 'blue'>Contrast</span>. I love coming up with 
-                                <span id= 'blue'>Hashtags</span> And so Dontate was born Black Garments,
-                                Colorful design, Hashtags.
-                                I want you to <span id= 'blue'>Influence </span>
-                                my art. Send me Hashtag Ideas and <span id= 'blue'>Design</span> Ideas.
-                            </h3>
-                            <br>
-                            <div id='social' class="row">
-                                <div class="col-sm-4">
-                                    <img src="img/hash2.png">
-                                </div>
-                                <br>
-                                <div class="col-sm-4">
-                                    <img src="img/shirt_icon2.png">
 
-                                </div>
-                                <br>
-                                <div class="col-sm-4">
-                                    <img src="img/color.png">
-                                </div>
-                                <br>
-                            </div>
-                            <hr>
-                        </div>
-                    </center>
+                <div class='col-md-12'>
+                    <div class='jumbotron' style="-moz-border-radius: 0px; -webkit-border-radius: 0px;border-radius: 0px;">
+                        <center>
+                            <img src="img/alt.png" style=" width:200px; height: auto;">
+                            <h4>About</h4>
+                        </center>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div id='info' class="col-md-2">
+
+
+
                     <br>
                 </div>
 
 
-                <div id='designer' class="col-md-6">
-                    <center>
-                        <h3>Designer<p class= 'lead'>Brandon Rice</p></h3>
-                        <img src="img/portrait.jpg">
+                <div id='designer' class="col-md-8 ">
+                    <div>
+                        <center>
+                            <h3> Dontae was founded in 2014 when Brandon Dontae Rice created a graphic design line from his apartment in Champaign, Illinois.  He claims his motivation came from his picky clothing habits. And his determination came from his unwavering desire to try everything this world has to offer. One cold day in late November Brandon told his roommates that he would create a clothing line and so he did. His expectations were very modest and what came was very surprising, people liked his designs and urged him to pursue his line. Brandon at awh and filled with excitement set out on the road to create a brand that would allow people to express themselves as he hopes them too. </h3>
+                        </center>
                         <br>
                         <br>
                         <br>
-                        <hr>
-                    </center>
 
-                    <center>
-                        <div id='social' class="row">
-                            <div class="col-sm-4">
-
-
-                            </div>
-                            <div class="col-sm-4">
-                                <a href="http://www.facebook.com/dontaefashion">
-                                    <img src="img/facebook.png">
-                                </a>
-                                &nbsp;
-                                <a href="http://twitter.com/DontaeFashion">
-                                    <img src="img/twitter.png">
-                                </a>
-                                &nbsp;
-                                <a href="http://instagram.com/dontaefashion">
-                                    <img src="img/instagram.png">
-                                </a>
-
-                            </div>
-                            <div class="col-sm-4">
-
-                            </div>
-                        </div>
-                    </center>
+                        <center>
+                            <img src="img/pic3.jpg" srcset="img/pic3.jpg 600w, img/pic3.jpg 230w " alt = "img/pic3.jpg">
+                            <h3>Brandon Rice/<span id = 'blue'>Designer</span></h3>
+                        </center>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class='clearfix'></div>
                 </div>
 
+                <div class='col-md-2'>
+                </div>
             </div>
         </div>
+
+
         <footer>
             <div class="container text-center">
                 <hr />
