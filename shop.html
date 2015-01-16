@@ -101,8 +101,46 @@ hr {
     background-color: white;
     color: black;
 }
-#products{
+#products {
     margin-bottom: 4%;
+}
+/*GROW*/
+
+.grow img {
+    -webkit-transition: all 1s ease;
+    /* Safari and Chrome */
+    
+    -moz-transition: all 1s ease;
+    /* Firefox */
+    
+    -o-transition: all 1s ease;
+    /* IE 9 */
+    
+    -ms-transition: all 1s ease;
+    /* Opera */
+    
+    transition: all 1s ease;
+    max-width: 100%;
+}
+.grow:hover img {
+    -webkit-transform: scale(1.25);
+    /* Safari and Chrome */
+    
+    -moz-transform: scale(1.25);
+    /* Firefox */
+    
+    -ms-transform: scale(1.25);
+    /* IE 9 */
+    
+    -o-transform: scale(1.25);
+    /* Opera */
+    
+    transform: scale(1.25);
+}
+.grow {
+    height: 300px;
+    width: 270px;
+    overflow: auto;
 }
 </style>
 
@@ -172,10 +210,94 @@ hr {
                             <div class='col-sm-2'>
                             </div>
                             <div class='col-sm-8'>
+
                                 <div class='row'>
+
+                                    <div class="col-md-4">
+                                        <div id='golem' class="thumbnail">
+                                            <div class='grow'>
+                                                <img src="img/golem.png" alt="...">
+                                            </div>
+                                            <div class="caption">
+
+                                                <div class='row'>
+                                                    <div class='col-sm-6'>
+                                                        <h4>Golem</h4>
+
+                                                    </div>
+
+                                                    <div class='col-sm-6'>
+                                                        <p><a href="#" id="btnfund" class="btn btn-defualt pull-right" role="button"><span class='glyphicon glyphicon-ok'></span></a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-4">
+                                        <div id='flag' class="thumbnail">
+                                            <div class='grow'>
+                                                <img src="img/flag.png" alt="...">
+                                            </div>
+                                            <div class="caption">
+
+                                                <div class='row'>
+                                                    <div class='col-sm-6'>
+                                                        <h4>Flag</h4>
+
+                                                    </div>
+
+                                                    <div class='col-sm-6'>
+                                                        <p><a href="#" id="btnfund" class="btn btn-defualt pull-right" role="button"><span class='glyphicon glyphicon-ok'></span></a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div id='dripper' class="thumbnail">
+                                            <div class='grow'>
+                                                <img src="img/dripper.png" alt="...">
+                                            </div>
+                                            <div class="caption">
+
+                                                <div class='row'>
+                                                    <div class='col-sm-6'>
+                                                        <h4>Dripper</h4>
+
+                                                    </div>
+
+                                                    <div class='col-sm-6'>
+                                                        <p><a href="#" id="btnfund" class="btn btn-defualt pull-right" role="button"><span class='glyphicon glyphicon-ok'></span></a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class='row'>
+
                                     <div class="col-md-4">
                                         <div id='POP' class="thumbnail">
-                                            <img src="img/pop2.png" alt="...">
+                                            <div class='grow'>
+                                                <img src="img/pop2.png" alt="...">
+                                            </div>
                                             <div class="caption">
 
                                                 <div class='row'>
@@ -198,7 +320,9 @@ hr {
 
                                     <div class="col-md-4">
                                         <div id='Panda' class="thumbnail">
-                                            <img src="img/panda2.png" alt="...">
+                                            <div class='grow'>
+                                                <img src="img/panda2.png" alt="...">
+                                            </div>
                                             <div class="caption">
 
                                                 <div class='row'>
@@ -218,7 +342,9 @@ hr {
 
                                     <div class="col-md-4">
                                         <div id='Love' class="thumbnail">
-                                            <img src="img/love.png" alt="...">
+                                            <div class='grow'>
+                                                <img src="img/love.png" alt="...">
+                                            </div>
                                             <div class="caption">
 
                                                 <div class='row'>
@@ -243,7 +369,9 @@ hr {
                                 <div class='row'>
                                     <div class="col-md-4">
                                         <div id='Colors' class="thumbnail">
-                                            <img src="img/color2.png" alt="...">
+                                            <div class='grow'>
+                                                <img src="img/color2.png" alt="...">
+                                            </div>
                                             <div class="caption">
 
                                                 <div class='row'>
@@ -263,7 +391,9 @@ hr {
 
                                     <div class="col-md-4">
                                         <div id='Life' class="thumbnail">
-                                            <img src="img/life2.png" alt="...">
+                                            <div class='grow'>
+                                                <img src="img/life2.png" alt="...">
+                                            </div>
                                             <div class="caption">
 
                                                 <div class='row'>
@@ -284,7 +414,9 @@ hr {
 
                                     <div class="col-md-4">
                                         <div id='Live' class="thumbnail">
-                                            <img src="img/live2.png" alt="...">
+                                            <div class='grow'>
+                                                <img src="img/live2.png" alt="...">
+                                            </div>
                                             <div class="caption">
 
                                                 <div class='row'>
@@ -778,7 +910,7 @@ hr {
         -->
                     <footer>
                         <div class="container text-center">
-                            
+
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="col-md-3">
@@ -826,7 +958,7 @@ hr {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="row">
                                 <div class="col-lg-12">
                                     <ul class="nav nav-pills nav-justified">
