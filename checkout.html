@@ -93,6 +93,25 @@ a {
     background-color: white;
     color: black;
 }
+#content {
+    margin-top: 10%;
+}
+#logoHead {
+    margin-top: 3%;
+}
+#logopic {
+    width: 300px;
+    height: auto;
+}
+#product {
+    width: 300px;
+    height: auto;
+}
+#salebtn {
+    margin-top: 30%;
+    position: relative;
+    bottom: 0;
+}
 </style>
 
 <body>
@@ -140,44 +159,43 @@ a {
     </div>
 
     <div class='stuff'>
+
+        <div id='logoHead'>
+            <center>
+                <img id='logopic' src="img/Dontae_logoN_sm.png">
+            </center>
+        </div>
         <div class='container'>
             <div class='row'>
 
-                <div class='col-md-12'>
-                    <div class='jumbotron' style="-moz-border-radius: 0px; -webkit-border-radius: 0px;border-radius: 0px;">
-                        <center>
-                            <img src="img/alt.png" style=" width:200px; height: auto;">
-                            <h4>About</h4>
-                        </center>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div id='info' class="col-md-2">
-
-
-
-                    <br>
+                <div class='col-md-2'>
                 </div>
 
+                <div class="col-md-8">
 
-                <div id='designer' class="col-md-8 ">
-                    <div>
-                        <center>
-                            <h3> Dontae was founded in 2014 when Brandon Dontae Rice created a graphic design line from his apartment in Champaign, Illinois.  He claims his motivation came from his picky clothing habits. And his determination came from his unwavering desire to try everything this world has to offer. One cold day in late November Brandon told his roommates that he would create a clothing line and so he did. His expectations were very modest and what came was very surprising, people liked his designs and urged him to pursue his line. Brandon at awh and filled with excitement set out on the road to create a brand that would allow people to express themselves as he hopes them too. </h3>
-                        </center>
-                        <br>
-                        <br>
-                        <br>
+                    <div id='content' class='row'>
+                        <div class='col-sm-6'>
+                            <div>
+                                <img class="pull-right" src="Loading..." id='product'>
+                            </div>
+                        </div>
 
-                        <center>
-                            <img src="img/pic3.jpg" srcset="img/pic3.jpg 600w, img/pic3.jpg 230w " alt = "img/pic3.jpg">
-                            <h3>Brandon Rice/<span id = 'blue'>Designer</span></h3>
-                        </center>
-                        <br>
-                        <br>
-                        <br>
+                        <div class='col-sm-6'>
+                            <h2 id='title'>Live T-shirt</h2>
+                            <h4 id='color'>black</h4>
+                            
+                            <h4 id='description'>100% Rigspun cotton graphic T.</h4>
+                            <br>
+                            <br>
+                            <h2 id='price'>$26</h2>
+                            <div id='salebtn'>
+                                <div class='btn btn-default btn-sm'>add to cart</div>
+                                <div class='btn btn-info btn-sm'>keep shopping</div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class='clearfix'></div>
+
                 </div>
 
                 <div class='col-md-2'>
@@ -185,7 +203,8 @@ a {
             </div>
         </div>
 
-
+        <br>
+        <br>
         <footer>
             <div class="container text-center">
                 <hr />
@@ -250,6 +269,31 @@ a {
             <!-- /.row -->
         </footer>
     </div>
+    <script type="text/javascript">
+    //get product 
+    function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
+
+    var product = getUrlVars()["product"];
+
+    // insert image
+    var img = new Image();
+    var ext = '.png'
+    var start = 'img/'
+    var div = document.getElementById('product');
+    div.src = start.concat(product, ext);
+
+    img.onload = function() {
+        div.appendChild(img);
+    };
+    </script>
+
+
     <script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
